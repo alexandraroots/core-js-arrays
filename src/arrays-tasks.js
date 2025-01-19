@@ -503,7 +503,7 @@ function findCommonElements(arr1, arr2) {
 function findLongestIncreasingSubsequence(nums) {
   const tmp = Array(nums.length).fill(0);
 
-  nums.reduce(function (acc, element, index) {
+  nums.reduce((acc, element, index) => {
     if (index > 0 && nums[index] > nums[index - 1]) {
       tmp[index] = tmp[index - 1] + 1;
     }
